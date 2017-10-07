@@ -193,6 +193,17 @@ body {
   font-family: 'Libre Baskerville';
 }
 
+@font-face {
+  font-family: 'icomoon';
+  src: url('../fonts/icomoon.eot?v9pze9');
+  src: url('../fonts/icomoon.eot?v9pze9#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?v9pze9') format('truetype'),
+    url('../fonts/icomoon.woff?v9pze9') format('woff'),
+    url('../fonts/icomoon.svg?v9pze9#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
 *,*:before,*:after {
   box-sizing: border-box
 }
@@ -2243,7 +2254,7 @@ footer .footer-social a {
 }
 
 footer .footer-social a:before {
-  font-family: "icomoon"
+  font-family: "icomoon";
 }
 
 footer .footer-social a:hover {
@@ -2251,7 +2262,11 @@ footer .footer-social a:hover {
 }
 
 footer .footer-social a.instagram:before {
-  content: url("/instagram.png")
+  content: "\ea92"
+}
+
+footer .footer-social a.facebook:before {
+  content: "\ea91"
 }
 
 @media (max-width: 900px) {
@@ -2434,19 +2449,15 @@ nav:after {
 }
 
 .secondary-menu .secondary-menu-a:hover {
-  color: #f5866c
+  color: #f5866c;
 }
 
 .secondary-menu .secondary-menu-a:before {
   font-family: "icomoon"
 }
 
-.secondary-menu .favourites-a:before {
-  content: "\e606"
-}
-
 .secondary-menu .menu-icon-a:before {
-  content: "\e614"
+  content: "\e9bd"
 }
 
 .secondary-menu .favourites-li .favourites-a {
@@ -3904,10 +3915,6 @@ header.has-white-text .secondary-menu .search-form .search-field::-webkit-input-
   height: 100%;
   font-size: 14px;
   color: #191919
-}
-
-.talent-single-page .aside-footer .social-links .instagram:before,.talent-single-page .aside-footer .social-links .facebook:before,.talent-single-page .aside-footer .social-links .tumblr:before,.talent-single-page .aside-footer .social-links .twitter:before,.talent-single-page .aside-footer .social-links .external-link:before,.creatives-single-page .aside-footer .social-links .instagram:before,.creatives-single-page .aside-footer .social-links .facebook:before,.creatives-single-page .aside-footer .social-links .tumblr:before,.creatives-single-page .aside-footer .social-links .twitter:before,.creatives-single-page .aside-footer .social-links .external-link:before,.management-single-page .aside-footer .social-links .instagram:before,.management-single-page .aside-footer .social-links .facebook:before,.management-single-page .aside-footer .social-links .tumblr:before,.management-single-page .aside-footer .social-links .twitter:before,.management-single-page .aside-footer .social-links .external-link:before {
-  font-family: "icomoon"
 }
 
 .talent-single-page .aside-footer .social-links .instagram:hover,.talent-single-page .aside-footer .social-links .facebook:hover,.talent-single-page .aside-footer .social-links .tumblr:hover,.talent-single-page .aside-footer .social-links .twitter:hover,.talent-single-page .aside-footer .social-links .external-link:hover,.creatives-single-page .aside-footer .social-links .instagram:hover,.creatives-single-page .aside-footer .social-links .facebook:hover,.creatives-single-page .aside-footer .social-links .tumblr:hover,.creatives-single-page .aside-footer .social-links .twitter:hover,.creatives-single-page .aside-footer .social-links .external-link:hover,.management-single-page .aside-footer .social-links .instagram:hover,.management-single-page .aside-footer .social-links .facebook:hover,.management-single-page .aside-footer .social-links .tumblr:hover,.management-single-page .aside-footer .social-links .twitter:hover,.management-single-page .aside-footer .social-links .external-link:hover {
