@@ -3114,6 +3114,10 @@ header.has-white-text .secondary-menu .search-form .search-field::-webkit-input-
   transition: transform 0.4s,opacity 0.4s
 }
 
+html.touch .home-wrapper .home-menu li {
+  opacity: 1;
+}
+
 .home-wrapper .home-menu li:nth-child(2) {
   -webkit-transition: -webkit-transform 0.4s,opacity 0.4s;
   -webkit-transition-delay: 0.1s,0.1s;
@@ -3128,6 +3132,22 @@ header.has-white-text .secondary-menu .search-form .search-field::-webkit-input-
   -moz-transition: -moz-transform 0.4s 0.2s,opacity 0.4s 0.2s;
   -o-transition: -o-transform 0.4s 0.2s,opacity 0.4s 0.2s;
   transition: transform 0.4s 0.2s,opacity 0.4s 0.2s
+}
+
+.home-wrapper .home-menu li:nth-child(4) {
+  -webkit-transition: -webkit-transform 0.4s,opacity 0.4s;
+  -webkit-transition-delay: 0.3s,0.3s;
+  -moz-transition: -moz-transform 0.4s 0.3s,opacity 0.4s 0.3s;
+  -o-transition: -o-transform 0.4s 0.3s,opacity 0.4s 0.3s;
+  transition: transform 0.4s 0.3s,opacity 0.4s 0.3s
+}
+
+.home-wrapper .home-menu li:nth-child(5) {
+  -webkit-transition: -webkit-transform 0.4s,opacity 0.4s;
+  -webkit-transition-delay: 0.4s,0.4s;
+  -moz-transition: -moz-transform 0.4s 0.4s,opacity 0.4s 0.4s;
+  -o-transition: -o-transform 0.4s 0.4s,opacity 0.4s 0.4s;
+  transition: transform 0.4s 0.4s,opacity 0.4s 0.4s
 }
 
 .home-wrapper .home-menu li:last-child {
