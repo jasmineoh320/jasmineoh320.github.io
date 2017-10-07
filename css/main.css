@@ -3025,7 +3025,6 @@ header.has-white-text .secondary-menu .search-form .search-field::-webkit-input-
 
 .home-wrapper .home-menu {
   position: absolute;
-  width: 175px;
   height: auto;
   top: 50%;
   width: 400px;
@@ -3171,7 +3170,7 @@ html.touch .home-wrapper .home-menu li {
   }
 
   .home-wrapper .home-menu {
-    width: 400px
+    width: 58vw;
   }
 
   .home-wrapper .home-menu h2 {
@@ -3179,14 +3178,94 @@ html.touch .home-wrapper .home-menu li {
     line-height: 62px
   }
 
+  .home-wrapper .home-menu.men h2 {
+    text-align: left;
+    padding-left: 15%;
+  }
+
+  .home-wrapper .home-menu.women h2 {
+    text-align: right;
+    padding-left: 0;
+    padding-right: 15%;
+  }
+
   .home-wrapper .home-menu ul {
-    font-size: 16px;
-    line-height: 20px;
     padding-top: 5px
   }
 
   .home-wrapper .home-menu li {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .home-wrapper .home-menu li {
     margin-bottom: 2px
+  }
+
+  .home-wrapper .home-menu.men li {
+    padding-left: 40%;
+  }
+  .home-wrapper .home-menu.women li {
+    padding-right: 40%;
+  }
+}
+
+@media (max-width: 700px) {
+  .home-wrapper .home-menu {
+    width: 55vw;
+  }
+
+  .home-wrapper .home-menu h2 {
+    font-size: 31px;
+    line-height: 31px;
+  }
+
+  .home-wrapper .home-menu.men h2 {
+    text-align: left;
+    padding-left: 15%;
+  }
+
+  .home-wrapper .home-menu.women h2 {
+    text-align: right;
+    padding-left: 0;
+    padding-right: 15%;
+  }
+
+  .home-wrapper .home-menu li {
+    font-size: 16px;
+    line-height: 16px;
+    padding-top: 5px
+  }
+
+  .home-wrapper .home-menu.men li {
+    padding-left: 30%;
+  }
+  .home-wrapper .home-menu.women li {
+    padding-right: 30%;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-wrapper .home-menu {
+    width: 50vw;
+  }
+
+  .home-wrapper .home-menu.men h2 {
+    text-align: left;
+    padding-left: 25%;
+  }
+
+  .home-wrapper .home-menu.women h2 {
+    text-align: right;
+    padding-left: 0;
+    padding-right: 25%;
+  }
+
+  .home-wrapper .home-menu.men li {
+    padding-left: 40%;
+  }
+  .home-wrapper .home-menu.women li {
+    padding-right: 40%;
   }
 }
 
