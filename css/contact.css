@@ -54,6 +54,11 @@ nav {
   box-sizing: border-box;
 }
 
+.jmo-form input[type=email]:focus, .jmo-form input[type=text]:focus, .jmo-form textarea:focus {
+  outline: 0;
+  border-color: #129FEA;
+}
+
 .jmo-form button {
   padding: 0.5em 0.1em;
   border: transparent;
@@ -63,6 +68,20 @@ nav {
   cursor: pointer;
   display: inline-block;
   box-sizing: border-box;
+}
+
+.jmo-form button:focus {
+  outline: 0;
+}
+
+.jmo-form button:active {
+  box-shadow: 0 0 0 1px rgba(0,0,0,.15) inset, 0 0 6px rgba(0,0,0,.2) inset;
+}
+
+.jmo-form button:hover {
+  filter: alpha(opacity=90);
+  background-image: -webkit-linear-gradient(transparent,rgba(0,0,0,.05) 40%,rgba(0,0,0,.1));
+  background-image: linear-gradient(transparent,rgba(0,0,0,.05) 40%,rgba(0,0,0,.1));
 }
 
 .jmo-form button[type=submit] {
