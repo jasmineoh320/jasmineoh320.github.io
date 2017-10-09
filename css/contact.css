@@ -18,8 +18,10 @@ nav {
 }
 
 #container {
-  width: 700px;
-  margin:auto;
+  box-sizing: border-box;
+  max-width: 700px;
+  padding: 0 2%;
+  margin: auto;
 }
 
 #media {
@@ -28,10 +30,17 @@ nav {
   background-image:url('background.jpg');
 }
 
-.jmo-form input, .jmo-form button {
+section:before {
+  display: block;
+  content: "";
+  border-top: 1px solid #CCCCCC;
+  margin-bottom: 1em;
+}
+
+.jmo-form input, .jmo-form button, .jmo-form textarea{
   line-height: normal;
   font-weight: 300;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.02em;
 }
 
 .jmo-form fieldset {
@@ -89,8 +98,24 @@ nav {
   background-color: #e7a184;
 }
 
+.contact-form .jmo-form input, .contact-form .jmo-form button, .contact-form .jmo-form textarea {
+  font-size: 1.25em;
+}
+
+.width-1 {
+  width: 100%;
+}
+
+.width-1-2 {
+  width: 50%;
+}
+
+.width-1-3 {
+  width: 33%;
+}
+
 p {
-  font-size: 12px;
+  font-size: 13px;
   color:#444444;
   letter-spacing: 1px;
   line-height: 15px;

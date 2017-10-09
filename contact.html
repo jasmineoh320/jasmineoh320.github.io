@@ -10,7 +10,7 @@
   </head>
 
   <body>
-    <div id="container">
+    <div id="container" class="width-1">
       <header>
         <h2>CONTACT</h2>
         <nav><a href="index.html"><img src="logo.png" alt="logo" height="100" width="100"></a> </nav>
@@ -25,22 +25,27 @@
         </p>
 
       </article>
-      <section>
+      <section class="contact-form">
         <form class="jmo-form"
               action="https://formspree.io/jasmineoh320@gmail.com"
               method="POST">
           <fieldset>
             <div class="control-group">
-              <input type="text" name="name" placeholder="Your Name">
+              <input class="width-1" type="text" name="name" placeholder="Your Name" required>
             </div>
             <div class="control-group">
-              <input type="email" name="_replyto" placeholder="Your Email">
+              <input class="width-1" type="email" name="_replyto" placeholder="Your Email" required>
             </div>
             <div class="control-group">
-              <textarea name="message" placeholder="Hello leave me a note. I would love to work with you!"></textarea>
+              <textarea class="width-1" name="message" 
+                placeholder="Hello write me a note. I would love to work with you!" 
+                rows=10
+                maxlength=2000
+                minlength=1
+                required></textarea>
             </div>
             <div class="control-group">
-              <button type="submit">Send</button>
+              <button class="width-1-3" type="submit">Send</button>
             </div>
           </fieldset>
         </form>
