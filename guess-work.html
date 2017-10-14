@@ -13,7 +13,13 @@
     <link rel="stylesheet" href="css/featured-images.css">
     <link href="css/lightbox.css" rel="stylesheet">
 
+     <link rel="stylesheet" type="text/css" href="lib/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="lib/slick/slick-theme.css"/>
+
+    <link href="css/jquery.fullpage.css" rel="stylesheet">
+
     <script src="js/modernizr-2.8.3.min.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script type='text/javascript' src='js/jquery.js?ver=1.11.2'></script>
     <script type='text/javascript' src='js/jquery-migrate.min.js?ver=1.2.1'></script>
   </head>
@@ -234,10 +240,71 @@
 
         </div>
     </div>
+     
+    </section>
+    <section class="sample-images">
+      <div class="featured-image">
+        <div class="featured-image-inner" id="slick-carousel">
+          <div class="section">
+            <img src="/guess18.jpg">
+          </div>
+          <div class="section">
+            <img src="/guess17.jpg">
+          </div>
+          <div class="section">
+            <img src="/guess20.jpg">
+          </div>
+           <div class="section">
+            <img src="/guess19.jpg">
+          </div>
+           <div class="section">
+            <img src="/guess21.jpg">
+          </div>
+           <div class="section">
+            <img src="/guess23.jpg">
+          </div>
+           <div class="section">
+            <img src="/guess24.jpg">
+          </div>
+           <div class="section">
+            <img src="/guess25.jpg">
+          </div>
+           <div class="section">
+            <img src="/guess26.jpg">
+          </div>
+           <div class="section">
+            <img src="/guess27.jpg">
+          </div>
+          <div class="section">
+            <img src="/guess28.jpg">
+          </div>
+          <div class="section">
+            <img src="/guess29.jpg">
+          </div>
+          <div class="section">
+            <img src="/guess30.jpg">
+          </div>
+          <div class="section">
+            <img src="/guess31.jpg">
+          </div>
+          <div class="section">
+            <img src="/guess32.jpg">
+          </div>
+          <div class="section">
+            <img src="/guess33.jpg">
+          </div>
+        </div>
+      </div>
     </section>
 
     <script src="js/main.min.js" ></script>
 
     <script src="js/lightbox.js"></script>
+    <script type="text/javascript" src="lib/slick/slick.js"></script>
+    <script type="text/javascript">
+      jQuery(document).ready(function(){
+        jQuery('#slick-carousel').slick();
+      });
+    </script>
   </body>
 </html>
