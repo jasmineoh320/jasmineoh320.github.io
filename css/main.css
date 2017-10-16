@@ -5707,6 +5707,10 @@ html.touch .home-wrapper .home-menu li {
   justify-content: space-between;
 }
 
+.featured-image-holder a {
+  display: block;
+}
+
 .featured-book-section .image {
   width: 48%;
   height: 50%;
