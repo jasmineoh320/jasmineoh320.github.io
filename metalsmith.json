@@ -1,0 +1,13 @@
+{
+  "plugins": {
+    "metalsmith-layouts": {
+      "engine": "handlebars",
+      "directory": "src/layouts",
+      "partials": "src/partials",
+    },
+    "metalsmith-assets": {
+      "source": "./assets",
+      "destination": "./assets"
+    }
+  }
+}
