@@ -1,5 +1,6 @@
 var Metalsmith = require('metalsmith');
 var layouts = require('metalsmith-layouts');
+var inplace = require('metalsmith-in-place');
 var assets = require('metalsmith-assets');
 var browserSync = require('browser-sync');
 var argv = require('minimist')(process.argv);
@@ -21,26 +22,42 @@ if (!argv.deploy) {
   })
 }
 
+var dir = {
+    base: __dirname + '/',
+    lib: __dirname + '/lib/',
+    source: './src/',
+    dest: './build/'
+}
+
+var siteMeta = {
+  title: "Jasmine Oh",
+  description: "Collection of my work",
+  generator: "Metalsmith",
+  url: "http://jasmineoh.com"
+};
+
+var templateConfig = {
+    engine: 'handlebars',
+    directory: dir.source + 'templates/',
+    partials: dir.source + 'partials/',
+    default: 'page.html'
+};
+
+var inplaceConfig = {
+  pattern: 'templates/**/*'
+};
+
 function build(callback) {
   Metalsmith(__dirname)
-  .metadata({
-    title: "My Static Site & Blog",
-    description: "It's about saying »Hello« to the World.",
-    generator: "Metalsmith",
-    url: "http://www.metalsmith.io/"
-  })
-  .source('./src/pages')
-  .destination('./build')
+  .metadata(siteMeta)
+  .source(dir.source + '/pages/')
+  .destination(dir.dest)
   .clean(true)
+  .use(inplace(inplaceConfig)) // in-page templating
+  .use(layouts(templateConfig)) // layout templating
   .use(assets({
     source: './src/assets',
     destination: './assets'
-  }))
-  .use(layouts({
-    engine: 'handlebars',
-    directory: "./src/layouts",
-    partials: "./src/partials",
-    pattern: ["**/*.html", "*html"],
   }))
   .build(function (err, files) {
     if (err) { throw err; }
