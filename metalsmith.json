@@ -3,5 +3,6 @@
     "metalsmith-layouts": true,
     "metalsmith-in-place": true,
     "metalsmith-assets": true
+    "metalsmith-browser-sync": true
   }
 }
