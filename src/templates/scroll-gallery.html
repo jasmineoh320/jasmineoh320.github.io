@@ -9,13 +9,14 @@
     <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Quicksand|Abril+Fatface|Libre+Baskerville|Playfair+Display' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Josefin+Sans' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/featured-images.css">
-    <link href="assets/css/lightbox.css" rel="stylesheet">
-
-    <script src="assets/js/modernizr-2.8.3.min.js"></script>
-    <script type='text/javascript' src='assets/js/jquery.js?ver=1.11.2'></script>
-    <script type='text/javascript' src='assets/js/jquery-migrate.min.js?ver=1.2.1'></script>
+    {{#if page-css}}
+    {{> page-css }}
+    {{/if}}
+    {{#if headPartial}}
+    {{> (lookup . 'headPartial')}}
+    {{ else }}
+    {{> page-head }}
+    {{/if}}
   </head>
 
   <body class="models-page related-works">
