@@ -21,5 +21,14 @@
 
   <body class="models-page related-works">
   {{{contents}}}
+
+  {{> footer }}
+
+  {{# if bodyScriptPartial}}
+  {{> (lookup . 'bodyScriptPartial')}}
+  {{ else }}
+  {{> body-script }}
+  {{/if}}
+
   </body>
 </html>
