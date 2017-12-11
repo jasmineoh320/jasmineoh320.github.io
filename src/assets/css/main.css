@@ -2991,7 +2991,7 @@ header.has-white-text .secondary-menu .search-form .search-field::-webkit-input-
 
 .home-wrapper {
   position: absolute;
-  top: 95px;
+  top: 0;
   left: 0;
   width: 100%;
   height: calc(100% - 95px );
@@ -3165,7 +3165,7 @@ html.touch .home-wrapper .home-menu li {
 @media (max-width: 900px) {
   .home-wrapper {
     padding:0 110px;
-    top: 50px;
+    top: 0px;
     height: calc(100% - 175px )
   }
 
@@ -3422,7 +3422,8 @@ html.touch .home-wrapper .home-menu li {
   -moz-transform: translate3d(0, 0, 0);
   -ms-transform: translate3d(0, 0, 0);
   -o-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0)
+  transform: translate3d(0, 0, 0);
+  margin-bottom: 0px;
 }
 
 .home-page header.transition {

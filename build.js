@@ -27,17 +27,17 @@ var templateConfig = {
 };
 
 var inplaceConfig = {
-  pattern: 'templates/**/*'
+  pattern: '**/*.html',
 };
 
 function build(callback) {
   Metalsmith(__dirname)
   .metadata(siteMeta)
-  .source(dir.source + '/pages/')
+  .source(dir.source + 'pages')
   .destination(dir.dest)
   .clean(true)
-  .use(inplace(inplaceConfig)) // in-page templating
   .use(layouts(templateConfig)) // layout templating
+  .use(inplace(inplaceConfig)) // in-page templating
   .use(assets({
     source: './src/assets',
     destination: './assets'
