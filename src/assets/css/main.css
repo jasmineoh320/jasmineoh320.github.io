@@ -309,7 +309,7 @@ body {
   font-family: "Quicksand", sans-serif;
   font-size: 16px;
   color: #191919;
-  background: #fafafa;
+  background: white;
   opacity: 0;
   -webkit-transition: opacity 1s;
   -moz-transition: opacity 1s;
@@ -1272,7 +1272,7 @@ a:hover {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: 100% auto;
-  background-color: #fafafa;
+  background-color: white;
   -webkit-filter: grayscale(60%);
   -moz-filter: grayscale(60%);
   filter: grayscale(60%);
@@ -2074,7 +2074,7 @@ main {
   margin-bottom: -125px;
   z-index: 2;
   overflow: hidden;
-  background: #fafafa;
+  background: white;
   -webkit-transform: translate3d(0, 0, 0);
   -moz-transform: translate3d(0, 0, 0);
   -ms-transform: translate3d(0, 0, 0);
@@ -2140,7 +2140,7 @@ footer {
   font-size: 13px;
   line-height: 20px;
   z-index: 2;
-  background: #fafafa
+  background: white;
 }
 
 footer .footer-inner {
@@ -2996,7 +2996,7 @@ header.has-white-text .secondary-menu .search-form .search-field::-webkit-input-
   width: 100%;
   height: calc(100% - 95px );
   padding: 0 175px;
-  background: #fafafa;
+  background: #white;
   -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
   -ms-transform-style: preserve-3d;
