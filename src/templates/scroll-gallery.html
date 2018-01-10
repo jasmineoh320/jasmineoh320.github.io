@@ -21,13 +21,15 @@
   </head>
 
   <body class="models-page related-works">
-  {{> header }}
 
   <div class="container">
+  {{> header }}
+  <div class="content">
   {{{contents}}}
   </div>
-
   {{> footer }}
+  </div>
+
 
   {{# if bodyScriptPartial}}
   {{> (lookup . 'bodyScriptPartial')}}

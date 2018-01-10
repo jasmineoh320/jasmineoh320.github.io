@@ -16,11 +16,13 @@
     {{/if}}
   </head>
   <body>
-  {{> header }}
-
-  {{{contents}}}
-
-  {{> footer }}
+    <div class="container">
+    {{> header }}
+    <div class="content">
+    {{{contents}}}
+    </div>
+    {{> footer }}
+    </div>
   </body>
 
 </html>
