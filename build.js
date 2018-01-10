@@ -30,8 +30,8 @@ var inplaceConfig = {
   pattern: '**/*.html',
 };
 
-function build(callback) {
-  Metalsmith(__dirname)
+function build(config) {
+  var ms = Metalsmith(__dirname)
   .metadata(siteMeta)
   .source(dir.source + 'pages')
   .destination(dir.dest)
@@ -41,28 +41,27 @@ function build(callback) {
   .use(assets({
     source: './src/assets',
     destination: './assets'
-  }))
-  .use(browserSync({
-    port: 8000,
-    server: 'build',
-    files: ['src/**/*']
-  }))
-  .build(function (err, files) {
+  }));
+  if (config.browsersync) { 
+    ms.use(browserSync(
+      {
+        port: 8000,
+        server: 'build',
+        files: ['src/**/*']
+      }))
+  }
+  
+  ms.build(function (err, files) {
     if (err) { throw err; }
     var message = 'Build complete';
     console.log(message);
-    callback();
   });
 }
 
 // If I run node run deploy --prod, it should not use browser-sync to watch for changes.
 // Otherwise, it should.
-if (!argv.deploy) {
-  build(function () {
-    console.log('Done building.');
-  });
-} else {
-  build(function () {
-    console.log('Done building.');
-  })
+var deploy = argv.deploy
+var buildConfig = {
+  browsersync: !argv.deploy,
 }
+build(buildConfig);

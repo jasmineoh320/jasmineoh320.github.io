@@ -1,5 +1,8 @@
 {
   "name": "jasmineoh",
+  "scripts": {
+    "deploy": "./deploy.sh"
+  },
   "private": true,
   "dependencies": {
     "browser-sync": "^2.18.13",
