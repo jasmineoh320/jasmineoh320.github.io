@@ -1,0 +1,23 @@
+html{
+  font-family:'Libre Baskerville',sans-serif;
+  -ms-text-size-adjust:100%;
+  -webkit-text-size-adjust:100%;
+  background-color:white;
+}
+h2 .title {
+  font-family:'Playfair Display',sans-serif;
+}
+
+.header-logo{position:absolute;left:20px;top:25px;width:70px;height:70px;z-index:2}
+
+body{
+  margin:0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+}
