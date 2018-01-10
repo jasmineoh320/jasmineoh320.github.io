@@ -4,6 +4,7 @@ set -e
 GITURL=`git config remote.origin.url`
 npm install
 node build.js --deploy
+cp CNAME build
 cd build
 rm -rf .git/
 git init
