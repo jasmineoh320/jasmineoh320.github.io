@@ -2,11 +2,20 @@
   box-sizing: border-box
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 .container {
   position: relative;
   box-sizing: border-box;
-  margin: auto;
-  margin-bottom: 60px; /* footer height */
+  min-height: 100%;
+}
+
+.content {
+  padding-bottom: 60px; /* footer height */
 }
 
 @font-face {
@@ -21,7 +30,7 @@
 }
 
 footer {
-  position: fixed;
+  position: absolute;
   bottom: 0;
   height: 60px;
   width: 100%;
@@ -193,8 +202,8 @@ footer .footer-social a.facebook:before {
 }
 
 @media (max-width: 600px) {
-  .container {
-    margin-bottom: 90px;
+  .content {
+    padding-bottom: 90px;
   }
 
   footer {

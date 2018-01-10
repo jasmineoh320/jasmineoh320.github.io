@@ -3,8 +3,9 @@ body {
   margin: 0;
 }
 
-.container {
+.page-content {
   padding: 0 2%;
+  margin: auto;
 }
 
 section:before {
@@ -138,7 +139,7 @@ strong {
 }
 
 @media (max-width: 900px) {
-  .container {
+  .page-content {
     width: 100%;
   }
 }
