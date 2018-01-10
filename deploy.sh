@@ -6,9 +6,7 @@ npm install
 node build.js --deploy
 cp CNAME build
 cd build
-rm -rf .git/
-git init
-git remote add origin $GITURL
-git add .
+git add --all
 git commit -am "deploy"
-git push origin master:gh-pages --force
+git push origin HEAD:gh-pages
+cd ..
